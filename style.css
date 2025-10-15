@@ -1,0 +1,53 @@
+/* ページ全体の設定 */
+body {
+    font-family: "メイリオ", sans-serif; /* 日本語でもきれいな文字 */
+    margin: 0; /* 余白をなくす */
+    padding: 0;
+    text-align: center; /* 中央寄せ */
+}
+
+/* ヘッダー部分 */
+header {
+    background-color: #f4c542; /* 明るい黄色の背景 */
+    padding: 20px 0;
+    color: #333;
+}
+
+/* メイン部分 */
+.main {
+    margin: 40px 20px;
+}
+
+/* 画像スペース */
+.image-space {
+    width: 80%;
+    height: 200px;
+    background-color: #eee; /* 灰色の仮スペース */
+    margin: 20px auto;
+    border: 2px dashed #bbb; /* 枠線を点線で表示 */
+}
+
+/* 下部固定サイドバー */
+.bottom-bar {
+    position: fixed; /* スクロールしても固定 */
+    bottom: 0; /* 画面下に配置 */
+    width: 100%; /* 横いっぱい */
+    display: flex; /* 横並びにする */
+    justify-content: space-around; /* 均等に配置 */
+    background-color: #333; /* 背景は黒っぽく */
+    padding: 10px 0;
+}
+
+/* ボタンデザイン */
+.bottom-bar button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ボタン間の間隔を広げたい場合 */
+.bottom-bar button:not(:last-child) {
+    margin-right: 40px; /* 右に間隔を追加 */
+}
